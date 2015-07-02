@@ -7,9 +7,10 @@
 /*////////////////////////////////
 // General modifications
 ////////////////////////////////*/
+
 body {
   font-size: 16px;
-  max-width: 55%;
+  max-width: 60em;
   margin:0 auto;
   background-color: black;
   color: white;
@@ -17,7 +18,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: red;
 }
 
 li {
@@ -27,6 +28,30 @@ li {
 ul, li {
   padding: 0;
   margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+/*////////////////////////////////
+// Masive classes
+////////////////////////////////*/
+
+.title {
+  font-weight: normal;
+  color: #cca04e;
+  display: inline-block;s
+}
+
+.menuIcon {
+  display: inline-block;
+  float: right;
+  padding-right: .3em
 }
 
 /*////////////////////////////////
@@ -68,15 +93,18 @@ ul, li {
 }
 
 .nav-container {
-  background-color: #660e0e;
+  text-align: center;
+  background-color: #9a2619;
   margin-bottom: 1.9em;
+  border-top: 0.15em solid #9a2619;
+  border-bottom: 0.15em solid #9a2619;
 }
 
 .nav-item {
-  background-color: #aa3222;
+  background-color: #ae3927;
   display: inline-block;
   height: 2em;
-  border: 1px solid #742b22;
+  border: 0.1em solid #742b22;
 }
 
 .nav-item a {
@@ -98,6 +126,12 @@ ul, li {
   display: inline-block;
   max-width: 40em;
 }
+
+/*////////////////////////////////
+// News
+////////////////////////////////*/
+
+
 
 /*////////////////////////////////
 // Posts
@@ -153,7 +187,7 @@ ul, li {
 
 .post-bot {
   margin: 0 auto;
-  max-width: 94.5%;
+  max-width: 95.5%;
   border-top: 0.1em solid #181818;
 }
 
@@ -165,7 +199,7 @@ ul, li {
 
 .post-profileLink {
   font-size: 0.85em;
-  color: #d14222;
+  color: #dd4422;
   font-style: italic;
 }
 
@@ -177,7 +211,7 @@ ul, li {
 
 .post-comments {
   font-size: 0.85em;
-  color: #d14222;
+  color: #dd4422;
   float: right;
 }
 
@@ -195,7 +229,7 @@ ul, li {
   color: #ccaa77;
   font-size: 0.95em;
   font-weight: normal;
-  margin: 0.7em 0em 0.2em 1em;
+  margin: 0.3em 0em 0.5em 0.7em;
   text-align: left;
 }
 
@@ -241,7 +275,7 @@ ul, li {
 }
 
 .video-item:nth-child(even) {
-  margin-left: 3.6875em;
+  margin-left: 3em;
 }
 
 .video-imgLeft {
@@ -260,7 +294,7 @@ ul, li {
   top: 1.5em;
   left: 1.5em;
   padding: 0.5em;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .video-text {
@@ -275,5 +309,66 @@ ul, li {
 
 .rightContent-container {
   display: inline-block;
-  max-width: 20em;
+  max-width: 19em;
+  vertical-align: top;
+  background-color: #0c0c0c;
+  padding: 0 0.313em 0 0.313em;
+}
+
+/*////////////////////////////////
+// Broadcast
+////////////////////////////////*/
+
+.broadcast-container {
+
+}
+
+.broadcast-menu {
+  border-bottom: 0.125em solid #262626;
+  height: 1.5em;
+  margin-bottom: .5em;
+  padding: 0.313em 0 0 0.313em;
+}
+
+.broadcast-broadcastersContainer {
+
+}
+
+.broadcast-broadcasters {
+
+}
+
+.broadcast-item {
+  background-color: #191919;
+  height: 2em;
+  outline: none;
+  border-color: #515151;
+  box-shadow: inset 0 0 .1em #515151;
+}
+
+.broadcast-item:first-child {
+  margin-bottom: .01em;
+}
+
+.broadcast-lenguage {
+  display: inline-block;
+  color: #848484;
+  font-size: .7em;
+  padding-left: .3em;
+  line-height: 2em;
+  margin-right: .75em;
+}
+
+.broadcast-broadcaster {
+  display: inline-block;
+  color: #dd4422;
+  line-height: 2em;
+}
+
+.broadcast-broadcasterIcon {
+  display: inline-block;
+  color: #848484;
+  float: right;
+  line-height: 2em;
+  padding-right: .3em;
 }
