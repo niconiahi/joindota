@@ -18,7 +18,7 @@ body {
 
 a {
   text-decoration: none;
-  color: red;
+  color: white;
 }
 
 li {
@@ -39,8 +39,44 @@ h3 {
 }
 
 /*////////////////////////////////
-// Masive classes
+// Utilitary classes
 ////////////////////////////////*/
+
+.item-container {
+
+}
+
+.item-list {
+
+}
+
+.item-right {
+  border-bottom: 0.1em solid #181818;
+  padding-bottom: .1em;
+}
+
+.padLeft {
+  padding-left: .1em;
+}
+
+.padRight {
+  padding-right: .3em;
+}
+
+.right {
+  float: right;
+}
+
+.ib {
+  display: inline-block;
+}
+
+.menu {
+  border-bottom: 0.125em solid #262626;
+  height: 1.5em;
+  margin-bottom: .5em;
+  padding: 0.313em 0 0 0.313em;
+}
 
 .title {
   font-weight: normal;
@@ -51,7 +87,7 @@ h3 {
 .menuIcon {
   display: inline-block;
   float: right;
-  padding-right: .3em
+  padding-right: .3em;
 }
 
 /*////////////////////////////////
@@ -319,27 +355,8 @@ h3 {
 // Broadcast
 ////////////////////////////////*/
 
-.broadcast-container {
-
-}
-
-.broadcast-menu {
-  border-bottom: 0.125em solid #262626;
-  height: 1.5em;
-  margin-bottom: .5em;
-  padding: 0.313em 0 0 0.313em;
-}
-
-.broadcast-broadcastersContainer {
-
-}
-
-.broadcast-broadcasters {
-
-}
-
 .broadcast-item {
-  background-color: #191919;
+  background-color: #181818;
   height: 2em;
   outline: none;
   border-color: #515151;
@@ -371,4 +388,136 @@ h3 {
   float: right;
   line-height: 2em;
   padding-right: .3em;
+}
+
+/*////////////////////////////////
+// Matches
+////////////////////////////////*/
+
+.matches-container {
+
+}
+
+.matches-listContainer {
+
+}
+
+.matches-list {
+
+}
+
+.matches-item {
+ background-color: #181818;
+ text-align: center;
+ margin-bottom: 0.1em;
+}
+
+.matches-itemRight {
+  display: inline-block;
+}
+
+.matches-itemLeft {
+  margin-left: 0.313em;
+  display: inline-block;
+  float: left;
+}
+
+.matches-text {
+  display: inline-block;
+}
+
+.matches-team {
+  display: inline-block;
+  font-size: 0.7em;
+}
+
+.matches-timeContainer {
+  float: right;
+  margin-right: .1em;
+}
+
+.matches-timeInfo {
+  font-size: .9em;
+  border-radius: 0.2em;
+  margin-right: .3em;
+}
+
+.matches-timeIcon {
+  font-size: .85em;
+  background-color: #a32;
+  margin-right: .3em;
+  padding: 0 .1em;
+  border-radius: 0.15em;
+}
+
+/*////////////////////////////////
+// Gallery
+////////////////////////////////*/
+
+.gallery-container {
+
+}
+
+.gallery-contentContainer {
+  text-align: center;
+}
+
+.gallery-photo {
+  height: 8em;
+  width: 11em;
+  display: block;
+  margin: 0 auto 0.9em auto;
+
+}
+
+.gallery-text {
+  color: #dd4422;
+}
+
+/*////////////////////////////////
+// Social icons
+////////////////////////////////*/
+
+.social-icon {
+  font-size: 0.7em;
+}
+
+/*////////////////////////////////
+// Streams
+////////////////////////////////*/
+
+.stream-container {
+
+}
+
+.stream-menuContainer {
+  margin: 0;
+}
+
+.stream-left {
+  padding-left: .4em;
+}
+
+.stream-country {
+
+}
+
+.stream-provider {
+
+}
+
+.stream-text {
+  font-size: .8em;
+}
+
+.stream-text {
+
+}
+
+.stream-right {
+
+}
+
+.stream-personIcon {
+
 }
