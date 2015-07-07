@@ -1,93 +1,84 @@
 /*////////////////////////////////
-// Imports
-////////////////////////////////*/
-
-@import "normalize.css";
-
-/*////////////////////////////////
 // General modifications
 ////////////////////////////////*/
 
 body {
   font-size: 16px;
   max-width: 60em;
-  margin:0 auto;
+  margin: 0 auto;
   background-color: black;
   color: white;
 }
-
 a {
   text-decoration: none;
-  color: white;
+  color: #ccc;
 }
-
 li {
   list-style: none;
 }
-
 ul, li {
   padding: 0;
   margin: 0;
 }
-
 p {
   margin: 0;
 }
-
 h3 {
   margin: 0;
+}
+.fa {
+  color: #888888;
 }
 
 /*////////////////////////////////
 // Utilitary classes
 ////////////////////////////////*/
 
-.item-container {
-
-}
-
-.item-list {
-
-}
-
 .item-right {
   border-bottom: 0.1em solid #181818;
   padding-bottom: .1em;
 }
-
+.marRight {
+  margin-right: .2em;
+}
+.marLeft {
+  margin-left: .4em;
+}
 .padLeft {
   padding-left: .1em;
 }
-
-.padRight {
-  padding-right: .3em;
+.padLeft:last-child {
+  margin-right: 3em;
 }
-
+.padRight {
+  padding-right: .1em;
+}
 .right {
   float: right;
 }
-
 .ib {
   display: inline-block;
 }
-
 .menu {
   border-bottom: 0.125em solid #262626;
   height: 1.5em;
   margin-bottom: .5em;
   padding: 0.313em 0 0 0.313em;
 }
-
 .title {
   font-weight: normal;
   color: #cca04e;
-  display: inline-block;s
+  display: inline-block;
+  s
 }
-
 .menuIcon {
+  font-size: .9em;
   display: inline-block;
   float: right;
   padding-right: .3em;
+}
+.shrinkIcon {
+  font-size: .7em;
 }
 
 /*////////////////////////////////
@@ -97,14 +88,12 @@ h3 {
 .login {
   padding: 0.3em 0;
 }
-
 .login-link {
   color: white;
   font-weight: bold;
   float: left;
   margin-right: 0.3em;
 }
-
 .login-network {
   color: #dd4321;
   float: right;
@@ -127,7 +116,6 @@ h3 {
   padding: 0;
   margin: 0;
 }
-
 .nav-container {
   text-align: center;
   background-color: #9a2619;
@@ -135,20 +123,17 @@ h3 {
   border-top: 0.15em solid #9a2619;
   border-bottom: 0.15em solid #9a2619;
 }
-
 .nav-item {
   background-color: #ae3927;
   display: inline-block;
   height: 2em;
   border: 0.1em solid #742b22;
 }
-
 .nav-item a {
   color: white;
   line-height: 2em;
   padding: 2em;
 }
-
 .nav-item a:first-child {
   padding-left: 2em;
 }
@@ -164,10 +149,25 @@ h3 {
 }
 
 /*////////////////////////////////
-// News
+// News slide-show
 ////////////////////////////////*/
 
-
+.news-slides {
+  position: relative;
+  vertical-align: top;
+}
+.news-image {
+  width: 40em;
+  height: 18.75em;
+}
+.news-information {
+  position: absolute;
+  width: 90%;
+  top: 14em;
+  left: 1.5em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0.563em;
+}
 
 /*////////////////////////////////
 // Posts
@@ -177,37 +177,30 @@ h3 {
   background-color: #262626;
   border-bottom: 0.5em solid #181818;
 }
-
 .post-post:last-child {
   border: none;
 }
-
 .post-container {
   border-bottom: 1em solid black;
 }
-
 .post-top {
   margin-bottom: 0.3em;
 }
-
 .post-imageContainer {
   display: inline-block;
   width: 13.5625em;
   margin: 0 1%;
   padding-left: .50em;
 }
-
 .post-image {
   border: 0.1em solid #3a3a3a;
   max-width: 100%;
 }
-
 .post-title {
   color: #ccaa77;
   margin: 0em 0em 0em 0.8em;
   padding: .25em 0em;
 }
-
 .post-text {
   font-size: 0.9em;
   display: inline-block;
@@ -215,36 +208,30 @@ h3 {
   margin-right: 0.5em;
   text-align: justify;
 }
-
 .post-botContainer {
   margin: 0;
   padding: 0.6em 0;
 }
-
 .post-bot {
   margin: 0 auto;
   max-width: 95.5%;
   border-top: 0.1em solid #181818;
 }
-
 .post-postedBy {
   font-size: 0.85em;
   color: #494948;
   font-style: italic;
 }
-
 .post-profileLink {
   font-size: 0.85em;
   color: #dd4422;
   font-style: italic;
 }
-
 .post-hoursAgo {
   font-size: 0.85em;
   color: #698178;
   font-style: italic;
 }
-
 .post-comments {
   font-size: 0.85em;
   color: #dd4422;
@@ -260,7 +247,6 @@ h3 {
   height: 23em;
   text-align: center;
 }
-
 .video-title {
   color: #ccaa77;
   font-size: 0.95em;
@@ -268,7 +254,6 @@ h3 {
   margin: 0.3em 0em 0.5em 0.7em;
   text-align: left;
 }
-
 .video-leftArrowContainer {
   display: inline-block;
   margin-left: 0.8em;
@@ -276,7 +261,6 @@ h3 {
   vertical-align: middle;
   height: 21.25em;
 }
-
 .video-rightArrowContainer {
   display: inline-block;
   margin-right: 0.8em;
@@ -284,60 +268,50 @@ h3 {
   vertical-align: middle;
   height: 21.25em;
 }
-
 .video-leftArrow {
   background-color: #070707;
   padding: 1.4em 0.60em;
   line-height: 21.25em;
 }
-
 .video-rightArrow {
   background-color: #070707;
   padding: 1.4em 0.60em;
   line-height: 21.25em;
 }
-
 .video-container {
   width: 80%;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
 }
-
 .video-item {
- display: inline-block;
- position: relative;
- margin-bottom: 0.5em;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 0.5em;
 }
-
 .video-item:nth-child(even) {
   margin-left: 3em;
 }
-
 .video-imgLeft {
   height: 6.25em;
   width: 6.25em;
 }
-
 .video-imgRight {
   height: 6.25em;
   width: 6.25em;
 }
-
 .video-textContainer {
   position: absolute;
   text-align: center;
   top: 1.5em;
   left: 1.5em;
   padding: 0.5em;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
-
 .video-text {
   color: white;
   margin: 0;
 }
-
 
 /*////////////////////////////////
 // Right container
@@ -362,11 +336,9 @@ h3 {
   border-color: #515151;
   box-shadow: inset 0 0 .1em #515151;
 }
-
 .broadcast-item:first-child {
   margin-bottom: .01em;
 }
-
 .broadcast-lenguage {
   display: inline-block;
   color: #848484;
@@ -375,13 +347,11 @@ h3 {
   line-height: 2em;
   margin-right: .75em;
 }
-
 .broadcast-broadcaster {
   display: inline-block;
   color: #dd4422;
   line-height: 2em;
 }
-
 .broadcast-broadcasterIcon {
   display: inline-block;
   color: #848484;
@@ -394,82 +364,60 @@ h3 {
 // Matches
 ////////////////////////////////*/
 
-.matches-container {
-
-}
-
-.matches-listContainer {
-
-}
-
-.matches-list {
-
-}
-
 .matches-item {
- background-color: #181818;
- text-align: center;
- margin-bottom: 0.1em;
+  background-color: #181818;
+  text-align: center;
+  margin-bottom: 0.1em;
 }
-
 .matches-itemRight {
   display: inline-block;
 }
-
 .matches-itemLeft {
   margin-left: 0.313em;
   display: inline-block;
   float: left;
 }
-
 .matches-text {
   display: inline-block;
 }
-
 .matches-team {
   display: inline-block;
   font-size: 0.7em;
 }
-
 .matches-timeContainer {
   float: right;
   margin-right: .1em;
 }
-
 .matches-timeInfo {
   font-size: .9em;
   border-radius: 0.2em;
   margin-right: .3em;
 }
-
-.matches-timeIcon {
+.matches-timeBtn {
   font-size: .85em;
   background-color: #a32;
   margin-right: .3em;
   padding: 0 .1em;
   border-radius: 0.15em;
 }
+.matches-timeIcon {
+  font-size: .8em;
+  margin-left: .2em;
+}
 
 /*////////////////////////////////
 // Gallery
 ////////////////////////////////*/
 
-.gallery-container {
-
-}
-
 .gallery-contentContainer {
   text-align: center;
 }
-
 .gallery-photo {
   height: 8em;
   width: 11em;
   display: block;
   margin: 0 auto 0.9em auto;
-
 }
-
 .gallery-text {
   color: #dd4422;
 }
@@ -478,46 +426,69 @@ h3 {
 // Social icons
 ////////////////////////////////*/
 
+.social-title {
+  margin-right: .8em;
+}
+.social-iconContainer {
+  text-align: center;
+}
 .social-icon {
-  font-size: 0.7em;
+  color: #ab3d26;
+  margin-right: 0.1em;
+}
+.social-icon:first-child {
+  margin-left: 0.8em;
 }
 
 /*////////////////////////////////
 // Streams
 ////////////////////////////////*/
 
-.stream-container {
-
-}
-
 .stream-menuContainer {
   margin: 0;
 }
-
 .stream-left {
   padding-left: .4em;
 }
-
-.stream-country {
-
-}
-
-.stream-provider {
-
-}
-
 .stream-text {
   font-size: .8em;
 }
 
-.stream-text {
+/*////////////////////////////////
+// Forum threads
+////////////////////////////////*/
 
+.forum-menuContainer {
+  margin: 0;
+}
+.forum-leftContainer {
+  padding-left: .4em;
+}
+.forum-text {
+  font-size: .8em;
 }
 
-.stream-right {
+/*////////////////////////////////
+// Betting
+////////////////////////////////*/
 
+.betting-goldIcon {
+  color: #ffdb01;
+}
+.betting-silverIcon {
+  color: #808080;
+}
+.betting-cooperIcon {
+  color: #ab410e;
 }
 
-.stream-personIcon {
+/*////////////////////////////////
+// Footer
+////////////////////////////////*/
 
+.footer-container {
+  margin: .9em 0 0 1em;
+}
+.footer-link {
+  color: #dd4422;
 }
