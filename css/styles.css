@@ -4,7 +4,6 @@
 
 body {
   font-size: 16px;
-  max-width: 60em;
   margin: 0 auto;
   background-color: black;
   color: white;
@@ -34,6 +33,10 @@ h3 {
 // Utilitary classes
 ////////////////////////////////*/
 
+.fixedWidth {
+  max-width: 60em;
+  margin: 0 auto;
+}
 .item-right {
   border-bottom: 0.1em solid #181818;
   padding-bottom: .1em;
@@ -69,13 +72,13 @@ h3 {
   font-weight: normal;
   color: #cca04e;
   display: inline-block;
-  s
 }
 .menuIcon {
   font-size: .9em;
   display: inline-block;
   float: right;
   padding-right: .3em;
+  line-height: 1.6em;
 }
 .shrinkIcon {
   font-size: .7em;
@@ -112,6 +115,9 @@ h3 {
 // Nav bar
 ////////////////////////////////*/
 
+.nav-logo {
+  width: 100%;
+}
 .nav-bar {
   padding: 0;
   margin: 0;
@@ -129,13 +135,14 @@ h3 {
   height: 2em;
   border: 0.1em solid #742b22;
 }
-.nav-item a {
+.nav-item:last-child {
+  margin-right: 2em;
+}
+.nav-link {
   color: white;
   line-height: 2em;
   padding: 2em;
-}
-.nav-item a:first-child {
-  padding-left: 2em;
+  height: 2em;
 }
 
 /*////////////////////////////////
@@ -237,6 +244,9 @@ h3 {
   color: #dd4422;
   float: right;
 }
+.post-comments:last-child {
+  margin-right: .4em;
+}
 
 /*////////////////////////////////
 // Video
@@ -319,7 +329,7 @@ h3 {
 
 .rightContent-container {
   display: inline-block;
-  max-width: 19em;
+  max-width: 20em;
   vertical-align: top;
   background-color: #0c0c0c;
   padding: 0 0.313em 0 0.313em;
@@ -356,8 +366,8 @@ h3 {
   display: inline-block;
   color: #848484;
   float: right;
-  line-height: 2em;
-  padding-right: .3em;
+  line-height: 2.2em;
+  padding-right: .4em;
 }
 
 /*////////////////////////////////
@@ -368,6 +378,7 @@ h3 {
   background-color: #181818;
   text-align: center;
   margin-bottom: 0.1em;
+  height: 1.3em;
 }
 .matches-itemRight {
   display: inline-block;
@@ -390,19 +401,26 @@ h3 {
 }
 .matches-timeInfo {
   font-size: .9em;
-  border-radius: 0.2em;
   margin-right: .3em;
 }
 .matches-timeBtn {
-  font-size: .85em;
+  margin-top: .18em;
+  margin-right: .08em;
+  height: 1.1em;
+  font-size: .9em;
   background-color: #a32;
-  margin-right: .3em;
   padding: 0 .1em;
   border-radius: 0.15em;
 }
 .matches-timeIcon {
   font-size: .8em;
   margin-left: .2em;
+  color: #222222;
+}
+.matches-timeCounter {
+  font-size: .8em;
+  color: #222222;
+  margin-right: .2em;
 }
 
 /*////////////////////////////////
