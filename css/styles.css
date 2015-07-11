@@ -33,6 +33,12 @@ h3 {
 // Utilitary classes
 ////////////////////////////////*/
 
+.littleSlide-width {
+  width: 9.65em;
+}
+.littleSlide-width:first-child {
+  margin-left: 0.1em;
+}
 .fixedWidth {
   max-width: 60em;
   margin: 0 auto;
