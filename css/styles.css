@@ -161,7 +161,7 @@ h3 {
 }
 
 .nav-item:hover .nav-hidden {
-  border: .05em solid #ae3927;
+  border: .1em solid #ae3927;
   max-height: 30em;
   width: 40em;
 }
