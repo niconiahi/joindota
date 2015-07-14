@@ -5,7 +5,7 @@ $(document).ready(function() {
 
   big.owlCarousel({
     stopOnHover: true,
-    autoPlay: 3000,
+    autoPlay: 5000,
     singleItem: true,
     slideSpeed: 0,
     rewindSpeed: 1000,
@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   little.owlCarousel({
     stopOnHover: true,
-    items: 4,
+    items: 5,
     pagination: false,
     responsiveRefreshRate: 100,
     afterInit: function(el) {

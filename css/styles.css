@@ -34,7 +34,8 @@ h3 {
 ////////////////////////////////*/
 
 .littleSlide-width {
-  width: 9.65em;
+  width: 8em;
+  height: 3.7em;
 }
 .littleSlide-width:first-child {
   margin-left: 0.1em;
@@ -125,30 +126,84 @@ h3 {
   width: 100%;
 }
 .nav-bar {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 .nav-container {
-  text-align: center;
   background-color: #9a2619;
   margin-bottom: 1.9em;
-  border-top: 0.15em solid #9a2619;
-  border-bottom: 0.15em solid #9a2619;
+  text-align: center;
+  border: 0.1em solid #ae3927;
 }
 .nav-item {
   background-color: #ae3927;
   display: inline-block;
   height: 2em;
-  border: 0.1em solid #742b22;
+  position: relative;
 }
 .nav-item:last-child {
   margin-right: 2em;
 }
 .nav-link {
   color: white;
+  height: 2em;
   line-height: 2em;
   padding: 2em;
-  height: 2em;
+}
+.nav-hidden {
+  background-color: #0c0c0c;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+}
+
+.nav-item:hover .nav-hidden {
+  border: .05em solid #ae3927;
+  max-height: 30em;
+  width: 40em;
+}
+
+/*////////////////////////////////
+// Home hover
+////////////////////////////////*/
+
+.nav-homeHover-left {
+  padding: 1em;
+  text-align: center;
+}
+.nav-homeHover-image {
+  border: .1em solid black;
+  margin-bottom: 1em;
+  width: 16em;
+}
+.nav-homeHover-link {
+  width: 16em;
+  margin-bottom: 1.5em;
+}
+.nav-homeHover-link:last-child {
+  margin-bottom: .5em;
+}
+.nav-homeHover-linkText {
+  background-color: #262626;
+  border: .1em solid black;
+  width: 16em;
+  padding: .5em 1em;
+}
+.nav-homeHover-right {
+  text-align: center;
+  border: .1em solid black;
+  margin-top: 1em;
+  padding: 1em;
+  vertical-align: top;
+  width: 18em;
+}
+.nav-homeHover-rightText {
+  border: .1em solid #9a2619;
+  color: #9a2619;
+  padding: 1em;
 }
 
 /*////////////////////////////////
@@ -170,16 +225,16 @@ h3 {
   vertical-align: top;
 }
 .news-image {
-  width: 40em;
   height: 18.75em;
+  width: 40em;
 }
 .news-information {
-  position: absolute;
-  width: 90%;
-  top: 14em;
-  left: 1.5em;
   background-color: rgba(0, 0, 0, 0.5);
+  left: 1.5em;
   padding: 0.563em;
+  position: absolute;
+  top: 14em;
+  width: 90%;
 }
 
 /*////////////////////////////////
