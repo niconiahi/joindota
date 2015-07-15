@@ -150,7 +150,7 @@ h3 {
   line-height: 2em;
   padding: 2em;
 }
-.nav-hidden {
+.nav-hiddenLeague {
   background-color: #0c0c0c;
   left: 0;
   max-height: 0;
@@ -159,15 +159,28 @@ h3 {
   top: 100%;
   z-index: 1;
 }
-
-.nav-item:hover .nav-hidden {
+.nav-hiddenTournements {
+  background-color: #0c0c0c;
+  left: 0;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+}
+.nav-item:hover .nav-hiddenLeague {
   border: .1em solid #ae3927;
   max-height: 30em;
   width: 40em;
 }
+.nav-item:hover .nav-hiddenTournements {
+  border: .1em solid #ae3927;
+  max-height: 30em;
+  width: 17em;
+}
 
 /*////////////////////////////////
-// Home hover
+// League hover
 ////////////////////////////////*/
 
 .nav-homeHover-left {
@@ -201,9 +214,28 @@ h3 {
   width: 18em;
 }
 .nav-homeHover-rightText {
-  border: .1em solid #9a2619;
+  border: .1em solid #262626;
   color: #9a2619;
   padding: 1em;
+}
+
+/*////////////////////////////////
+// Tournements hover
+////////////////////////////////*/
+
+.nav-tournementsHover-link {
+  margin: 1.5em 0;
+}
+.nav-tournementsHover-link:first-child {
+  margin-top: 1.1em;
+}
+.nav-tournementsHover-link:last-child {
+  margin-bottom: 1em;
+}
+.nav-tournementsHover-linkText {
+  background-color: #262626;
+  border: .1em solid black;
+  padding: .5em 1em;
 }
 
 /*////////////////////////////////
@@ -275,6 +307,7 @@ h3 {
   max-width: 60%;
   margin-right: 0.5em;
   text-align: justify;
+  vertical-align: top;
 }
 .post-botContainer {
   margin: 0;
